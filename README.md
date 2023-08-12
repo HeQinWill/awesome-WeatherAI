@@ -18,6 +18,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
     - [FuXi](#fuxi)
     - [GraphCast](#graphcast)
     - [Pangu](#pangu)
+    - [pySTEPS](#pysteps)
 - [Blog Posts & News](#blog-posts--news)
 
 ## Papers
@@ -125,12 +126,15 @@ The goal of this repo is to provide a overview of the field to help researchers 
 - GNN model
 
 #### NowcastNet
-- [](https://doi.org/10.24433/CO.0832447.v1)
+- [NowcastNet - Tsinghua](https://doi.org/10.24433/CO.0832447.v1)
 - Nonlinear nowcasting model for extreme precipitation
 
 #### Pangu
 - [Pangu - Huawei](https://github.com/198808xc/Pangu-Weather)
 - Earth-specific transformer (3DEST)
+
+#### pySTEPS
+- [pySTEPS](https://github.com/pySTEPS/pysteps)
 
 ### ✨Other kits
 
