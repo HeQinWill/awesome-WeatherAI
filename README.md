@@ -1,6 +1,6 @@
 # Awesome Weather AI [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-<img src='./awesome-weatherai.jpg'>
+<img src='https://github.com/HeQinWill/awesome-WeatherAI/blob/main/awesome-weatherai.jpg'>
 
 This repository contains a curated list of papers, datasets, models, surveys, and other resources related to using AI for weather forecasting and climate modeling.  
 
@@ -13,7 +13,11 @@ The goal of this repo is to provide a overview of the field to help researchers 
 - [Papers](#papers)
 - [Datasets](#datasets)
 - [Models](#models)
-- [Surveys](#surveys)
+    - [ClimaX](#climax)
+    - [FourCastNet](#fourcastnet)
+    - [FuXi](#fuxi)
+    - [GraphCast](#graphcast)
+    - [Pangu](#pangu)
 - [Blog Posts & News](#blog-posts--news)
 
 ## Papers
@@ -25,10 +29,6 @@ The goal of this repo is to provide a overview of the field to help researchers 
 - [Can Machines Learn to Predict Weather? Using Deep Learning to Predict Gridded 500-hPa Geopotential Height From Historical Weather Data](https://onlinelibrary.wiley.com/doi/abs/10.1029/2019MS001705) - Jonathan A. Weyn et al., 2019
 
   Proposed a CNN model for weather forecasting basic atmospheric variables. Showed potential for ML in weather forecasting.
-
-- [ClimateBench v1.0: A Benchmark for Data-Driven Climate Projections](https://onlinelibrary.wiley.com/doi/abs/10.1029/2021MS002954) - D. Watson-Parris et al., 2022
-
-  Introduced a benchmark dataset and models for evaluating data-driven climate emulators.
 
 - [ClimaX: A foundation model for weather and climate](http://arxiv.org/abs/2301.10343) - Tung Nguyen et al., 2023 👉[ClimaX](#climax)
 
@@ -50,7 +50,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
   Introduced a Fourier neural operator model for global high-resolution weather forecasting.
 
-- [FuXi: A cascade machine learning forecasting system for 15-day global weather forecast](http://arxiv.org/abs/2306.12873) - Lei Chen et al., 2023
+- [FuXi: A cascade machine learning forecasting system for 15-day global weather forecast](http://arxiv.org/abs/2306.12873) - Lei Chen et al., 2023 👉[FuXi](#fuxi)
 
   Proposed a cascaded ML model that provides skillful 15-day global forecasts.
 
@@ -62,7 +62,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
   Improved prior CNN weather forecasting model using cubed sphere mapping and other enhancements.
 
-- [Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4) - Yuchen Zhang et al., 2023
+- [Skilful nowcasting of extreme precipitation with NowcastNet](https://www.nature.com/articles/s41586-023-06184-4) - Yuchen Zhang et al., 2023 👉[NowcastNet](#nowcastnet)
 
   Proposed NowcastNet model for extreme precipitation nowcasting that outperforms operational models.
 
@@ -73,45 +73,66 @@ The goal of this repo is to provide a overview of the field to help researchers 
 - [SwinVRNN: A Data-Driven Ensemble Forecasting Model via Learned Distribution Perturbation](http://arxiv.org/abs/2205.13158) - Yuan Hu et al., 2023
 
   Proposed a stochastic weather forecasting model with learned distribution perturbation for ensemble forecasts.
+  
+- [The Compatibility between the Pangu Weather Forecasting Model and Meteorological Operational Data](https://doi.org/10.48550/arXiv.2308.04460) - Wencong Cheng et al., 2023 👉[Pangu](#pangu)
+  
+  The Pangu-Weather model has been validated by the ECMWF and is compatible with various NWP systems, exhibiting stable forecasting capability and improved performance with better initial conditions.
+
 
 ## Datasets
 
-### ✨benchmarks
-- [WeatherBench](https://github.com/pangeo-data/WeatherBench)  
-  ⏬[https](https://dataserv.ub.tum.de/index.php/s/m1524895) ⏬`ftp://m1524895:m1524895@dataserv.ub.tum.de`  
+### ✨Raw archives
+#### ERA5
+- [hourly data on pressure levels from 1940](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels)
+- [hourly data on single levels from 1940](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
+
+### ✨Benchmarks
+- [WeatherBench](https://github.com/pangeo-data/WeatherBench)
+
+  📒[paper](https://doi.org/10.1029/2020MS002203) 🔗[https](https://dataserv.ub.tum.de/index.php/s/m1524895) 🔗`ftp://m1524895:m1524895@dataserv.ub.tum.de`  
   A benchmark dataset derived from ERA5 for evaluating data-driven weather forecasting models.
 
-- [WeatherBench 2](https://weatherbench2.readthedocs.io/en/latest/index.html)  
+- [WeatherBench 2](https://github.com/google-research/weatherbench2)
+
+  📒[docs](https://weatherbench2.readthedocs.io/en/latest) 🔗`gs://weatherbench2/datasets`  
   Extended version of WeatherBench with more variables.
 
-- [ClimateBench](https://github.com/duncanwp/ClimateBench)  
-  ⏬[https](https://zenodo.org/record/7064308)  
-  It consists of NorESM2 simulation outputs with associated forcing data processed in to a consistent format from a variety of experiments performed for CMIP6. Multiple ensemble members are included where available.  
+- [ClimateBench](https://github.com/duncanwp/ClimateBench)
 
-### ✨raw archives
+  📒[paper](https://doi.org/10.1029/2021MS002954) 🔗[https](https://zenodo.org/record/7064308)  
+  It consists of NorESM2 simulation outputs with associated forcing data processed in to a consistent format from a variety of experiments performed for CMIP6. Multiple ensemble members are included where available.  
 
 
 ## Models
 
-### ✨official implements
-
-#### FourCastNet
-- [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
-- Fourier neural operator model
-
-#### GraphCast
-- [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
-- GNN model
+### ✨Official implements
 
 #### ClimaX 
 - [ClimaX - Microsoft](https://github.com/microsoft/ClimaX)
 - Universal Transformer model
 
+#### FourCastNet
+- [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
+- Fourier neural operator model
+
+#### FuXi
+- [FuXi - Fudan](https://github.com/tpys/FuXi)
+- Cascaded ML weather forecasting system
+- 🔐restricted
+
+#### GraphCast
+- [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
+- GNN model
+
+#### NowcastNet
+- [](https://doi.org/10.24433/CO.0832447.v1)
+- Nonlinear nowcasting model for extreme precipitation
+
 #### Pangu
 - [Pangu - Huawei](https://github.com/198808xc/Pangu-Weather)
 - Earth-specific transformer (3DEST)
 
-### ✨other kits
+### ✨Other kits
 
 - [ai-models - ECMWF](https://github.com/ecmwf-lab/ai-models)  
   👉[FourCastNet](#fourcastnet) 👉[Pangu](#pangu)
@@ -119,14 +140,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 - [OpenCastKit - High-Flyer](https://github.com/HFAiLab/OpenCastKit)  
   👉[FourCastNet](#fourcastnet) 👉[GraphCast](#graphcast)
 
-## Surveys
-
-- [The rise of machine learning in weather forecasting](https://www.ecmwf.int/en/about/media-centre/science-blog/2023/rise-machine-learning-weather-forecasting) - ECMWF, 2023
-
-  Discussion of recent advances in ML for weather forecasting from ECMWF scientists.
 
 ## Blog Posts & News
-
+- [The rise of machine learning in weather forecasting](https://www.ecmwf.int/en/about/media-centre/science-blog/2023/rise-machine-learning-weather-forecasting) - ECMWF, 2023
 - [The AI Forecaster: Machine Learning Takes On Weather Prediction](http://eos.org/research-spotlights/the-ai-forecaster-machine-learning-takes-on-weather-prediction) - Eos, 2022
-
-  News article on using ML for weather forecasting.
