@@ -18,9 +18,9 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
 ## Papers
 
-- [Accurate medium-range global weather forecasting with 3D neural networks](https://www.nature.com/articles/s41586-023-06185-3) - Kaifeng Bi et al., 2023
+- [Accurate medium-range global weather forecasting with 3D neural networks](https://www.nature.com/articles/s41586-023-06185-3) - Kaifeng Bi et al., 2023 👉[Pangu](#pangu)
 
-  Used 3D convolutional networks on a icosahedral mesh grid to generate medium-range global weather forecasts. Outperformed operational forecasts from ECMWF.
+  Used 3D Earth-specific transformer (3DEST) on a icosahedral mesh grid to generate medium-range global weather forecasts. Outperformed operational forecasts from ECMWF.
 
 - [Can Machines Learn to Predict Weather? Using Deep Learning to Predict Gridded 500-hPa Geopotential Height From Historical Weather Data](https://onlinelibrary.wiley.com/doi/abs/10.1029/2019MS001705) - Jonathan A. Weyn et al., 2019
 
@@ -30,7 +30,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
   Introduced a benchmark dataset and models for evaluating data-driven climate emulators.
 
-- [ClimaX: A foundation model for weather and climate](http://arxiv.org/abs/2301.10343) - Tung Nguyen et al., 2023
+- [ClimaX: A foundation model for weather and climate](http://arxiv.org/abs/2301.10343) - Tung Nguyen et al., 2023 👉[ClimaX](#climax)
 
   Proposed a Transformer-based model for general weather and climate prediction tasks. Showed strong performance with pretraining.
 
@@ -46,7 +46,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
   Proposed an ensemble ML model for global medium-range forecasting that extends skillful forecasts to 10+ days.
 
-- [FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators](http://arxiv.org/abs/2202.11214) - Jaideep Pathak et al., 2022
+- [FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators](http://arxiv.org/abs/2202.11214) - Jaideep Pathak et al., 2022 👉[FourCastNet](#fourcastnet)
 
   Introduced a Fourier neural operator model for global high-resolution weather forecasting.
 
@@ -54,7 +54,7 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
   Proposed a cascaded ML model that provides skillful 15-day global forecasts.
 
-- [GraphCast: Learning skillful medium-range global weather forecasting](http://arxiv.org/abs/2212.12794) - Remi Lam et al., 2022
+- [GraphCast: Learning skillful medium-range global weather forecasting](http://arxiv.org/abs/2212.12794) - Remi Lam et al., 2022 👉[GraphCast](#graphcast)
 
   Showed a GNN model that surpasses operational medium-range weather forecasts.
 
@@ -76,31 +76,48 @@ The goal of this repo is to provide a overview of the field to help researchers 
 
 ## Datasets
 
-- [WeatherBench](https://github.com/pangeo-data/WeatherBench) - Stephan Rasp et al., 2020
-
+### ✨benchmarks
+- [WeatherBench](https://github.com/pangeo-data/WeatherBench)  
+  ⏬[https](https://dataserv.ub.tum.de/index.php/s/m1524895) ⏬`ftp://m1524895:m1524895@dataserv.ub.tum.de`  
   A benchmark dataset derived from ERA5 for evaluating data-driven weather forecasting models.
 
-- [WeatherBench 2](https://weatherbench2.readthedocs.io/en/latest/index.html) - Stephan Rasp et al.
-
+- [WeatherBench 2](https://weatherbench2.readthedocs.io/en/latest/index.html)  
   Extended version of WeatherBench with more variables.
+
+- [ClimateBench](https://github.com/duncanwp/ClimateBench)  
+  ⏬[https](https://zenodo.org/record/7064308)  
+  It consists of NorESM2 simulation outputs with associated forcing data processed in to a consistent format from a variety of experiments performed for CMIP6. Multiple ensemble members are included where available.  
+
+### ✨raw archives
+
 
 ## Models
 
-- [ClimaX](https://github.com/microsoft/ClimaX) - Microsoft, 2023
+### ✨official implements
 
-  Transformer model for weather and climate prediction.
+#### FourCastNet
+- [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
+- Fourier neural operator model
 
-- [FourCastNet](https://github.com/pangeo-data/ECKFNet) - Pangeo, 2022
+#### GraphCast
+- [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
+- GNN model
 
-  Fourier neural operator model for global weather forecasting.
+#### ClimaX 
+- [ClimaX - Microsoft](https://github.com/microsoft/ClimaX)
+- Universal Transformer model
 
-- [GraphCast](https://github.com/DeepMind-Scholarship/graphcast) - DeepMind, 2022
+#### Pangu
+- [Pangu - Huawei](https://github.com/198808xc/Pangu-Weather)
+- Earth-specific transformer (3DEST)
 
-  GNN model for medium-range weather forecasting.
+### ✨other kits
 
-- [ai-models](https://github.com/ecmwf-lab/ai-models) - ECMWF lab, 2023
+- [ai-models - ECMWF](https://github.com/ecmwf-lab/ai-models)  
+  👉[FourCastNet](#fourcastnet) 👉[Pangu](#pangu)
 
-  Implementations of ML weather models from ECMWF.
+- [OpenCastKit - High-Flyer](https://github.com/HFAiLab/OpenCastKit)  
+  👉[FourCastNet](#fourcastnet) 👉[GraphCast](#graphcast)
 
 ## Surveys
 
