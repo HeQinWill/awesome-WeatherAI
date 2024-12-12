@@ -31,6 +31,10 @@ The goal of this repo is to provide an overview of the field to help researchers
 
   Proposed a CNN model for weather forecasting basic atmospheric variables. Showed potential for ML in weather forecasting.
 
+- [ClimateLearn: Benchmarking Machine Learning for Weather and Climate Modeling](http://arxiv.org/abs/2307.01909) - Tung Nguyen et al., 2023
+
+  Designed an open-source PyTorch library to provide ML pipelines for climate and weather modeling.
+  
 - [ClimaX: A foundation model for weather and climate](http://arxiv.org/abs/2301.10343) - Tung Nguyen et al., 2023 👉[ClimaX](#climax)
 
   Proposed a Transformer-based model for general weather and climate prediction tasks. Showed strong performance with pretraining.
@@ -78,6 +82,10 @@ The goal of this repo is to provide an overview of the field to help researchers
 - [The Compatibility between the Pangu Weather Forecasting Model and Meteorological Operational Data](https://doi.org/10.48550/arXiv.2308.04460) - Wencong Cheng et al., 2023 👉[Pangu](#pangu)
   
   The Pangu-Weather model has been validated by the ECMWF and is compatible with various NWP systems, exhibiting stable forecasting capability and improved performance with better initial conditions.
+
+- [YanTian: An Application Platform for AI Global Weather Forecasting Models](http://arxiv.org/abs/2410.04539) - Wencong Cheng et al., 2024
+
+  Designed an application platform to enhance the usability of facilitate the AIGWFMs in operational weather forecasting.
 
 
 ## Datasets
@@ -145,5 +153,6 @@ The goal of this repo is to provide an overview of the field to help researchers
 
 
 ## Blog Posts & News
-- [The rise of machine learning in weather forecasting](https://www.ecmwf.int/en/about/media-centre/science-blog/2023/rise-machine-learning-weather-forecasting) - ECMWF, 2023
 - [The AI Forecaster: Machine Learning Takes On Weather Prediction](http://eos.org/research-spotlights/the-ai-forecaster-machine-learning-takes-on-weather-prediction) - Eos, 2022
+- [The rise of machine learning in weather forecasting](https://www.ecmwf.int/en/about/media-centre/science-blog/2023/rise-machine-learning-weather-forecasting) - ECMWF, 2023
+- [AI weatherman: the DeepMind researcher making faster, more accurate forecasts](https://www.nature.com/articles/d41586-024-03898-x) - Nature, 2024
