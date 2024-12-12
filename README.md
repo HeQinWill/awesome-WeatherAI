@@ -6,7 +6,7 @@ This repository contains a curated list of papers, datasets, models, surveys, an
 
 It includes key papers that have advanced the state-of-the-art in areas like global forecasting, precipitation prediction, and climate projection using deep learning techniques. Popular benchmark datasets and open source implementations of influential models are also listed. The brief description is summarized by GPT.  
 
-The goal of this repo is to provide a overview of the field to help researchers quickly get up to speed on the current progress and opportunities in applying AI to weather and climate domains. Contributions are welcome!  
+The goal of this repo is to provide an overview of the field to help researchers quickly get up to speed on the current progress and opportunities in applying AI to weather and climate domains. Contributions are welcome!  
 
 ## Contents
 
@@ -119,7 +119,6 @@ The goal of this repo is to provide a overview of the field to help researchers 
 #### FuXi
 - [FuXi - Fudan](https://github.com/tpys/FuXi)
 - Cascaded ML weather forecasting system
-- 🔐restricted
 
 #### GraphCast
 - [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
