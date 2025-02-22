@@ -95,6 +95,15 @@ The goal of this repo is to provide an overview of the field to help researchers
 - [hourly data on pressure levels from 1940](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels)
 - [hourly data on single levels from 1940](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)
 
+#### ARCO-ERA5
+[Analysis-Ready, Cloud Optimized ERA5 dataset](https://github.com/google-research/arco-era5)
+
+- An ML-ready, unified (surface & atmospheric) version of the data in Zarr.  🔗`gs://gcp-public-data-arco-era5/ar/`
+- A port of gaussian-gridded ERA5 data to Zarr.  🔗`gs://gcp-public-data-arco-era5/co/`
+- All raw grib & NetCDF data.  🔗`gs://gcp-public-data-arco-era5/raw/`
+
+Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimized for cloud access and AI-driven weather modeling.  
+
 ### ✨Benchmarks
 - [WeatherBench](https://github.com/pangeo-data/WeatherBench)
 
