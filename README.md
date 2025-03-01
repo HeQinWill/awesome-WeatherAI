@@ -87,6 +87,9 @@ The goal of this repo is to provide an overview of the field to help researchers
 
   Designed an application platform to enhance the usability of facilitate the AIGWFMs in operational weather forecasting.
 
+- [Residual Corrective Diffusion Modeling for Km-scale Atmospheric Downscaling](https://arxiv.org/pdf/2309.15214) - Morteza Mardani et al., 2024 👉[CorrDiff](#corrdiff)
+
+  Proposed a residual corrective diffusion modeling approach to enhance the accuracy and efficiency of kilometer-scale atmospheric downscaling. 
 
 ## Datasets
 
@@ -132,6 +135,10 @@ Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimiz
 #### FourCastNet
 - [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
 - Fourier neural operator model
+
+#### CorrDiff
+- [CorrDiff - NVIDIA](https://github.com/NVIDIA/modulus/tree/main/examples/generative/corrdiff)
+- Residual Corrective Diffusion model for downscaling
 
 #### FuXi
 - [FuXi - Fudan](https://github.com/tpys/FuXi)
