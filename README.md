@@ -14,6 +14,8 @@ The goal of this repo is to provide an overview of the field to help researchers
 - [Datasets](#datasets)
 - [Models](#models)
     - [ClimaX](#climax)
+    - [CorrDiff](#corrdiff)
+    - [FengWu](#fengwu)
     - [FourCastNet](#fourcastnet)
     - [FuXi](#fuxi)
     - [GraphCast](#graphcast)
@@ -136,21 +138,21 @@ Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimiz
 - [ClimaX - Microsoft](https://github.com/microsoft/ClimaX)
 - Universal Transformer model
 
-#### FourCastNet
-- [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
-- Fourier neural operator model
-
 #### CorrDiff
 - [CorrDiff - NVIDIA](https://github.com/NVIDIA/modulus/tree/main/examples/generative/corrdiff)
 - Residual Corrective Diffusion model for downscaling
 
-#### FuXi
-- [FuXi - Fudan](https://github.com/tpys/FuXi)
-- Cascaded ML weather forecasting system
-
 #### FengWu
 - [FengWu - shlab](https://github.com/OpenEarthLab/FengWu)
 - Multi-modal, multi-task learning approach
+
+#### FourCastNet
+- [FourCastNet - NVIDIA](https://github.com/NVlabs/FourCastNet)
+- Fourier neural operator model
+
+#### FuXi
+- [FuXi - Fudan](https://github.com/tpys/FuXi)
+- Cascaded ML weather forecasting system
 
 #### GraphCast
 - [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
@@ -176,7 +178,7 @@ Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimiz
   👉[FourCastNet](#fourcastnet) 👉[GraphCast](#graphcast)
 
 - [Earth2Studio - Nvidia](https://nvidia.github.io/earth2studio/index.html)  
-  👉[FengWu](#fengwu) 👉[FuXi](#fuxi) 👉[CorrDiffTaiwan](#corrdiff) 👉[Pangu 3/6/24](#pangu)
+  👉[CorrDiff Taiwan](#corrdiff) 👉[FengWu](#fengwu) 👉[FuXi](#fuxi) 👉[Pangu 3/6/24](#pangu)
   
 ## Blog Posts & News
 - [The AI Forecaster: Machine Learning Takes On Weather Prediction](http://eos.org/research-spotlights/the-ai-forecaster-machine-learning-takes-on-weather-prediction) - Eos, 2022
