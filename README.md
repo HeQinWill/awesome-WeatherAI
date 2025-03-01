@@ -91,6 +91,10 @@ The goal of this repo is to provide an overview of the field to help researchers
 
   Proposed a residual corrective diffusion modeling approach to enhance the accuracy and efficiency of kilometer-scale atmospheric downscaling. 
 
+- [FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead](http://arxiv.org/abs/2304.02948) - Kang Chen et al., 2023 👉[FengWu](#fengwu)
+
+  Proposed a multi-modal, multi-task learning approach with a novel replay buffer mechanism
+
 ## Datasets
 
 ### ✨Raw archives
@@ -144,6 +148,10 @@ Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimiz
 - [FuXi - Fudan](https://github.com/tpys/FuXi)
 - Cascaded ML weather forecasting system
 
+#### FengWu
+- [FengWu - shlab](https://github.com/OpenEarthLab/FengWu)
+- Multi-modal, multi-task learning approach
+
 #### GraphCast
 - [GraphCast - DeepMind](https://github.com/deepmind/graphcast)
 - GNN model
@@ -167,7 +175,9 @@ Offers Zarr-formatted data in 0.25° lat-lon grids or native ERA5 grids, optimiz
 - [OpenCastKit - High-Flyer](https://github.com/HFAiLab/OpenCastKit)  
   👉[FourCastNet](#fourcastnet) 👉[GraphCast](#graphcast)
 
-
+- [Earth2Studio - Nvidia](https://nvidia.github.io/earth2studio/index.html)  
+  👉[FengWu](#fengwu) 👉[FuXi](#fuxi) 👉[CorrDiffTaiwan](#corrdiff) 👉[Pangu 3/6/24](#pangu)
+  
 ## Blog Posts & News
 - [The AI Forecaster: Machine Learning Takes On Weather Prediction](http://eos.org/research-spotlights/the-ai-forecaster-machine-learning-takes-on-weather-prediction) - Eos, 2022
 - [The rise of machine learning in weather forecasting](https://www.ecmwf.int/en/about/media-centre/science-blog/2023/rise-machine-learning-weather-forecasting) - ECMWF, 2023
